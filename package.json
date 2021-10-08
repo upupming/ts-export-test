@@ -1,0 +1,14 @@
+{
+  "name": "export-test",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "esbuild src/index.ts --platform=node --bundle --outfile=dist/index.js && tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^16.10.3",
+    "esbuild": "^0.13.4"
+  }
+}
